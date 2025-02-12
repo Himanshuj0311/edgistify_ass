@@ -29,7 +29,7 @@ Description: Registers a new user.Request Body:
   "createdAt": "Date",
   "updatedAt": "Date"
 }
-
+```
 Responses:
 
 ✅ 200 OK - Successfully registered
@@ -45,6 +45,7 @@ Description: Logs in an existing user.Request Body:
   "email": "string",
   "password": "string"
 }
+```
 
 Responses:
 
@@ -69,6 +70,7 @@ Description: Adds a new product.Request Body:
   "createdAt": "Date",
   "updatedAt": "Date"
 }
+```
 
 Responses:
 
@@ -102,7 +104,7 @@ Description: Adds or updates a product in the cart.Request Body:
   "createdAt": "Date",
   "updatedAt": "Date"
 }
-
+```
 Responses:
 
 ✅ 200 OK - Successfully added/updated
@@ -140,6 +142,7 @@ Middleware: authenticateUser (Ensures user is authenticated)Description: Places 
   "createdAt": "Date",
   "updatedAt": "Date"
 }
+```
 Responses:
 
 ✅ 200 OK - Order placed successfully
@@ -232,12 +235,21 @@ The frontend of Edgistify_Ass is built with React.js, offering an intuitive and 
   <img width="946" alt="image" src="https://github.com/user-attachments/assets/b56c51bd-2c60-4901-8306-44c946308cba" />
 
 - **Signup Page**
-- **Login Page**
-- **Product Listing Page**
-- **Cart Page**
-- **Checkout Page**
+  <img width="554" alt="image" src="https://github.com/user-attachments/assets/b5aaf018-f97d-4c11-a62b-a0ae48e9016a" />
 
-📷 **Screenshots**
-(Add relevant screenshots here)
+- **Login Page**
+  ![image](https://github.com/user-attachments/assets/899c8d32-9fac-43ec-8b55-09dcf98a0de1)
+
+- **Product Listing Page**
+  <img width="947" alt="image" src="https://github.com/user-attachments/assets/693c0c2f-ec5f-4289-8418-3d1404ad37fd" />
+
+- **Cart Page**
+  ![image](https://github.com/user-attachments/assets/c284493b-a55b-44fc-ab12-10c9d95c013e)
+
+- **Checkout Page**
+  <img width="548" alt="image" src="https://github.com/user-attachments/assets/78d89ccf-af2e-4b46-9211-4f40cc8b3ddd" />
+
+
+
 
 💡 **Happy Shopping! 🚀**
