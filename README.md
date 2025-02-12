@@ -21,7 +21,7 @@ Authentication middleware for secured routes
 1️⃣ POST /user/signup
 
 Description: Registers a new user.Request Body:
-
+```json
 {
   "fullName": "string",
   "email": "string",
@@ -40,6 +40,7 @@ Responses:
 
 Description: Logs in an existing user.Request Body:
 
+```json
 {
   "email": "string",
   "password": "string"
@@ -57,6 +58,7 @@ Responses:
 
 Description: Adds a new product.Request Body:
 
+```json
 {
   "name": "string",
   "description": "string",
@@ -88,6 +90,7 @@ Description: Retrieves all products.Responses:
 
 Description: Adds or updates a product in the cart.Request Body:
 
+```json
 {
   "userId": "ObjectId",
   "items": [
@@ -120,6 +123,7 @@ Description: Retrieves the current user's cart.Responses:
 
 Middleware: authenticateUser (Ensures user is authenticated)Description: Places an order for the cart's products.Request Body:
 
+```json
 {
   "userId": "ObjectId",
   "products": [
@@ -200,13 +204,13 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 
 📧 Contact
 
-For queries, contact your-email@example.com
+For queries, contact himanshu.masai@gmail.com
 
 💡 Happy Coding! 🚀
 
 # 📦 Edgistify_Ass Frontend
 
-🚀 **Live Project:** [Edgistify_Ass Frontend](https://your-frontend-deployment-url.com/)
+🚀 **Live Project:** [Edgistify_Ass Frontend](https://edgistify-ass-3.onrender.com/)
 
 The frontend of Edgistify_Ass is built with React.js, offering an intuitive and seamless shopping experience for users.
 
@@ -225,6 +229,8 @@ The frontend of Edgistify_Ass is built with React.js, offering an intuitive and 
 ## Pages
 
 - **Home Page**
+  <img width="946" alt="image" src="https://github.com/user-attachments/assets/b56c51bd-2c60-4901-8306-44c946308cba" />
+
 - **Signup Page**
 - **Login Page**
 - **Product Listing Page**
