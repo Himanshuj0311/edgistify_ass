@@ -60,7 +60,7 @@ const createOrUpdateCart = async (req, res) => {
 };
 
 const getCart = async (req, res) => {
-  const { userId } = req.quary; 
+  const { userId } = req.query;
 
   if (!userId) {
     return res.status(400).json({
@@ -94,6 +94,42 @@ const getCart = async (req, res) => {
   }
 };
 
+const removeFromCart = async (req, res) => {
+  try {
+    const { productId, userId } = req.body;
+
+    
+    let cart = await Cart.findOne({ userId });
+
+    if (!cart) {
+      return res.status(404).json({ status: 404, message: "Cart not found" });
+    }
+
+   
+    const productIndex = cart.items.findIndex(item => item.productId.toString() === productId.toString());
+
+    if (productIndex === -1) {
+      return res.status(404).json({ status: 404, message: "Product not found in cart" });
+    }
+
+    cart.items.splice(productIndex, 1);
+
+   
+    if (cart.items.length === 0) {
+      await Cart.deleteOne({ userId });
+      return res.json({ status: 200, message: "Cart is now empty and has been deleted" });
+    }
+
+    cart.updatedAt = Date.now();
+    await cart.save();
+
+    return res.json({ status: 200, message: "Product removed successfully", data: cart });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ status: 500, message: "An error occurred while removing the product from the cart" });
+  }
+};
+
 module.exports = {
-  createOrUpdateCart,getCart
+  createOrUpdateCart,getCart,removeFromCart
 };
