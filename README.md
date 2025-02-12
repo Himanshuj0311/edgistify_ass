@@ -1,4 +1,4 @@
-📦 Edgistify_Ass
+# 📦 Edgistify_Ass
 
 Edgistify_Ass is a robust e-commerce backend built with Node.js, Express, and MongoDB. It provides essential functionalities for user authentication, product management, cart handling, and order processing.
 
@@ -170,21 +170,29 @@ Validation: Validator.js for input validation
 
 Clone the repository
 
+```bash
 git clone https://github.com/your-repo/edgistify_ass.git
 cd edgistify_ass
+```
 
 Install dependencies
 
+```bash
 npm install
+```
 
 Set up environment variables (.env file)
 
+```env
 MONGO_URI=your-mongodb-url
 JWT_SECRET=your-secret-key
+```
 
 Start the server
 
+```bash
 npm start
+```
 
 ✨ Contributing
 
@@ -196,3 +204,34 @@ For queries, contact your-email@example.com
 
 💡 Happy Coding! 🚀
 
+# 📦 Edgistify_Ass Frontend
+
+🚀 **Live Project:** [Edgistify_Ass Frontend](https://your-frontend-deployment-url.com/)
+
+The frontend of Edgistify_Ass is built with React.js, offering an intuitive and seamless shopping experience for users.
+
+## Tech Stack
+
+**Client:**
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+**Server:**
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+
+## Pages
+
+- **Home Page**
+- **Signup Page**
+- **Login Page**
+- **Product Listing Page**
+- **Cart Page**
+- **Checkout Page**
+
+📷 **Screenshots**
+(Add relevant screenshots here)
+
+💡 **Happy Shopping! 🚀**
